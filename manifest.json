@@ -1,16 +1,16 @@
 {
   "name": "OMUGO AI 3.0 - Build Websites with AI",
   "short_name": "OMUGO AI",
-  "description": "Build unlimited premium websites with AI in 30 seconds. Prompt, URL, Image to Website. Free.",
+  "description": "Build unlimited premium websites",
   "start_url": "/omugo-ai-builder/",
-"scope": "/omugo-ai-builder/",
+  "scope": "/omugo-ai-builder/",
   "display": "standalone",
   "background_color": "#0a0a12",
   "theme_color": "#FFD84D",
   "orientation": "any",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/2721/2721626.png",
+      "src": "logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
