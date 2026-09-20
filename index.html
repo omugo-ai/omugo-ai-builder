@@ -2,7 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OMUGO AI 3.0 - Build Unlimited AI Websites</title>
+<title>OMUGO AI 3.0 - Build Unlimited AI Websites in 30s</title>
+<meta name="description" content="OMUGO AI - Build unlimited premium websites with AI in 30 seconds. Convert prompt, URL or image to website. No coding needed. Fastest AI builder in Africa.">
+<meta name="keywords" content="AI website builder, prompt to website, URL to website, image to website, free AI website builder, OMUGO AI, Pastor Clement">
+<meta name="author" content="Pastor Clement - OMUGO AI">
+<meta property="og:title" content="OMUGO AI - Build Websites with AI in 30s">
+<meta property="og:description" content="Build unlimited websites with AI. Prompt + URL + Image → Premium Website. Free to use.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFD84D">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2721/2721626.png">
+
 <script src="https://js.puter.com/v2/"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -24,15 +35,15 @@
 <div id="loadingScreen" style="display:none"><span class="loader" style="width:44px;height:44px"></span><p style="margin-top:12px;color:#FFD84D;font-weight:900">Loading live site...</p><p id="loadMsg" style="color:#666;font-size:11px">Checking cloud...</p><div id="notFound" style="display:none;margin-top:16px;text-align:center"><p>⚠️ Link expired</p><a href="/" style="display:inline-block;margin-top:10px;background:#FFD84D;color:#111;padding:10px 18px;border-radius:20px;font-weight:800;text-decoration:none">← Build New</a></div></div>
 <div id="app">
 <section style="background:radial-gradient(circle at 20% 30%,#2a1a5e 0%,#0a0a12 60%),radial-gradient(circle at 80% 20%,#5a1a8a 0%,transparent 50%);padding:20px 5% 36px">
-<header style="display:flex;justify-content:space-between;align-items:center"><div style="display:flex;align-items:center;gap:8px;font-weight:900;font-size:20px"><div style="width:36px;height:36px;background:linear-gradient(135deg,#C9A227,#FFD84D);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#111"><i class="fas fa-bolt"></i></div>OMUGO AI <span style="background:#FFD84D;color:#111;padding:2px 8px;border-radius:6px;font-size:10px">3.0</span></div><div style="display:flex;gap:8px;align-items:center"><select id="langSelect" onchange="setLang(this.value)" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;padding:8px 10px;border-radius:20px;font-size:12px;font-weight:700"><option value="en">🇺🇸 EN</option><option value="fr">🇫🇷 FR</option><option value="es">🇪🇸 ES</option><option value="pt">🇧🇷 PT</option><option value="de">🇩🇪 DE</option></select><span style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);padding:8px 12px;border-radius:20px;font-size:11px">🌍 30+ Built</span><a href="#builder" class="btn-gold" style="padding:10px 16px;font-size:12px">Start FREE</a></div></header>
+<header style="display:flex;justify-content:space-between;align-items:center"><div style="display:flex;align-items:center;gap:8px;font-weight:900;font-size:20px"><div style="width:36px;height:36px;background:linear-gradient(135deg,#C9A227,#FFD84D);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#111"><i class="fas fa-bolt"></i></div>OMUGO AI <span style="background:#FFD84D;color:#111;padding:2px 8px;border-radius:6px;font-size:10px">3.0</span></div><div style="display:flex;gap:8px;align-items:center"><select id="langSelect" onchange="setLang(this.value)" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;padding:8px 10px;border-radius:20px;font-size:12px;font-weight:700"><option value="en">🇺🇸 EN</option><option value="fr">🇫🇷 FR</option><option value="es">🇪🇸 ES</option><option value="pt">🇧🇷 PT</option><option value="de">🇩🇪 DE</option></select><span style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);padding:8px 12px;border-radius:20px;font-size:11px">🌍 30+ Built</span><button id="installBtn" style="display:none;background:#25D366;color:#fff;padding:8px 12px;border-radius:20px;font-size:11px;font-weight:800;border:none">📲 Install App</button><a href="#builder" class="btn-gold" style="padding:10px 16px;font-size:12px">Start FREE</a></div></header>
 <div id="heroGrid" style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:20px;align-items:center;margin-top:20px">
 <div>
 <div data-t="badge" style="display:inline-block;background:#FFD84D;color:#111;padding:6px 14px;border-radius:20px;font-weight:900;font-size:12px;transform:rotate(-2deg)">BUILD UNLIMITED AI WEBSITES</div>
 <h1 data-t="hero" style="font-size:42px;line-height:.9;font-weight:900;margin-top:12px">WEBSITES WITH<br><span style="color:#FFD84D">AI IN 30s!</span></h1>
 <div style="margin-top:14px">
-<p data-t="f1" style="display:flex;gap:8px;align-items:center;font-size:13px;margin:8px 0"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> No Monthly Fees - $30/year Unlimited</p>
+<p data-t="f1" style="display:flex;gap:8px;align-items:center;font-size:13px;margin:8px 0"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> No Monthly Fees - Free To Start</p>
 <p data-t="f2" style="display:flex;gap:8px;align-items:center;font-size:13px;margin:8px 0"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> Prompt + URL + Image → Website</p>
-<p data-t="f3" style="display:flex;gap:8px;align-items:center;font-size:13px;margin:8px 0"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> Webhooks + Autoresponder + Analytics</p>
+<p data-t="f3" style="display:flex;gap:8px;align-items:center;font-size:13px;margin:8px 0"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> Installable App + Shareable Link</p>
 </div>
 <a href="#builder" class="btn-gold" data-t="cta" style="display:inline-flex;margin-top:18px;font-size:14px"><i class="fas fa-rocket"></i>&nbsp;GET STARTED NOW!</a>
 <p style="font-size:10px;color:#888;margin-top:10px">All-in-One AI Builder • OMUGO AI by Pastor Clement</p>
@@ -43,13 +54,7 @@
 </div>
 </div>
 </section>
-<section style="padding:14px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px">
-<div class="card"><i class="fas fa-code" style="color:#FFD84D"></i><b style="display:block;margin-top:6px;font-size:11px">AI HTML Builder</b></div>
-<div class="card"><i class="fas fa-link" style="color:#60a5fa"></i><b style="display:block;margin-top:6px;font-size:11px">URL → Website</b></div>
-<div class="card"><i class="fas fa-image" style="color:#f472b6"></i><b style="display:block;margin-top:6px;font-size:11px">Image → Website</b></div>
-<div class="card"><i class="fas fa-wand-magic-sparkles" style="color:#4ade80"></i><b style="display:block;margin-top:6px;font-size:11px">Webhooks + AutoResp</b></div>
-<div class="card"><i class="fas fa-cloud" style="color:#60a5fa"></i><b style="display:block;margin-top:6px;font-size:11px">Host or Download</b></div>
-</section>
+
 <div id="builder" style="padding:20px 5%;display:grid;grid-template-columns:1.1fr 0.9fr;gap:20px">
 <div>
 <div style="display:flex;gap:6px;margin-bottom:12px">
@@ -57,6 +62,13 @@
 <button id="tabUrl" onclick="switchTab('url')" style="flex:1;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#fff;font-size:12px;font-weight:700"><i class="fas fa-link"></i> URL</button>
 <button id="tabImage" onclick="switchTab('image')" style="flex:1;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#fff;font-size:12px;font-weight:700"><i class="fas fa-image"></i> Image</button>
 </div>
+
+<div style="background:rgba(255,216,77,.08);border:1px dashed #FFD84D;border-radius:12px;padding:10px;margin-bottom:12px">
+<p style="font-size:11px;font-weight:800;color:#FFD84D">📩 Want to save your sites? (Optional)</p>
+<input id="userContact" class="big-input" style="padding:10px;margin-top:6px;font-size:12px" placeholder="Your Email or WhatsApp (to get your link later)">
+<p style="font-size:9px;color:#888;margin-top:4px">Free forever - we only use to send you your link & updates</p>
+</div>
+
 <div id="panelPrompt">
 <textarea id="promptInput" class="big-input" style="min-height:170px" placeholder="✨ Type your prompt here... e.g. Build me a modern restaurant website with menu, gallery, WhatsApp ordering, location Abomey-Calavi..."></textarea>
 </div>
@@ -68,21 +80,10 @@
 <div id="panelImage" style="display:none">
 <input type="file" id="imageFile" accept="image/*" class="big-input">
 <div id="imagePreview" style="margin-top:8px;display:none"><img id="imgPrev" style="width:100%;border-radius:12px;max-height:200px;object-fit:cover"><p id="imgDesc" style="font-size:10px;color:#888;margin-top:4px"></p></div>
-<input id="imagePrompt" class="big-input" style="margin-top:8px;min-height:50px" placeholder="What website from this image? e.g. Build restaurant site from menu">
+<input id="imagePrompt" class="big-input" style="margin-top:8px;min-height:50px" placeholder="What website from this image?">
 </div>
 <div id="status" style="display:none;margin-top:10px;background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.3);padding:10px;border-radius:12px;font-size:12px"><span class="loader"></span> <span id="statusText" style="color:#FFD84D">Building...</span></div>
 <button id="buildBtn" onclick="buildWebsite()" class="btn-gold" style="width:100%;margin-top:12px"><i class="fas fa-wand-magic-sparkles"></i> Build My Website Now</button>
-
-<div id="integrationsPanel" style="margin-top:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,216,77,.3);border-radius:16px;padding:14px;display:none">
-<h3 style="font-weight:900;font-size:13px;color:#FFD84D"><i class="fas fa-plug"></i> Integrations - Autoresponder + Webhooks</h3>
-<div style="margin-top:10px;display:grid;gap:8px">
-<input id="autoKey" class="big-input" style="padding:10px;font-size:11px" placeholder="Mailchimp API Key (optional)">
-<input id="autoList" class="big-input" style="padding:10px;font-size:11px" placeholder="List ID (optional)">
-<input id="webhookUrl" class="big-input" style="padding:10px;font-size:11px" placeholder="Webhook URL for WhatsApp/Zapier">
-<button onclick="saveIntegrations()" style="margin-top:6px;width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,216,77,.3);color:#FFD84D;padding:10px;border-radius:12px;font-weight:800;font-size:12px"><i class="fas fa-save"></i> Save Integrations</button>
-<p id="intStatus" style="font-size:10px;color:#4ade80;margin-top:6px;display:none">✅ Saved!</p>
-</div>
-</div>
 </div>
 <div class="card">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><b style="font-size:11px"><i class="fas fa-eye" style="color:#4ade80"></i> Live Preview</b><div><button onclick="toggleEdit()" id="editBtn" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);color:#fff;padding:4px 8px;border-radius:10px;font-size:9px"><i class="fas fa-pen"></i> Edit</button> <span style="background:#0f5d31;color:#4ade80;padding:4px 8px;border-radius:10px;font-size:8px">PURE AI</span></div></div>
@@ -91,28 +92,36 @@
 <button onclick="downloadHTML()" style="width:100%;margin-top:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;padding:10px;border-radius:20px;font-size:12px;font-weight:700"><i class="fas fa-download"></i> Download HTML</button>
 </div>
 </div>
-<footer style="padding:20px 5%;text-align:center;border-top:1px solid rgba(255,255,255,.06);margin-top:20px"><p style="font-weight:900">OMUGO AI 3.0</p><p style="font-size:10px;color:#888">$30/year Unlimited • Prompt + URL + Image → Website • Pastor Clement</p></footer>
+<footer style="padding:20px 5%;text-align:center;border-top:1px solid rgba(255,255,255,.06);margin-top:20px"><p style="font-weight:900">OMUGO AI 3.0</p><p style="font-size:10px;color:#888">Free to start • Prompt + URL + Image → Website • Pastor Clement</p></footer>
 </div>
+
 <script>
-var JSONBLOB_API="https://jsonblob.com/api/jsonBlob";var currentTab='prompt';var lastImageBase64='';var integrations={mailchimpKey:'',listId:'',webhook:''};
+// VIRAL PWA - Install prompt
+let deferredPrompt;const installBtn=document.getElementById('installBtn');
+window.addEventListener('beforeinstallprompt',(e)=>{e.preventDefault();deferredPrompt=e;installBtn.style.display='block';});
+installBtn.addEventListener('click',async()=>{if(deferredPrompt){deferredPrompt.prompt();const {outcome}=await deferredPrompt.userChoice;deferredPrompt=null;installBtn.style.display='none';}});
+
+var JSONBLOB_API="https://jsonblob.com/api/jsonBlob";var currentTab='prompt';var lastImageBase64='';
 function extractHTML(t){if(!t)return"";var x=t.replace(/```html/g,'').replace(/```/g,'').trim();var s=x.toLowerCase().indexOf('<!doctype');if(s===-1)s=x.toLowerCase().indexOf('<html');var e=x.toLowerCase().lastIndexOf('</html>');if(s!==-1&&e!==-1)return x.substring(s,e+7);return x;}
 async function checkLive(){var p=new URLSearchParams(location.search);var id=p.get('site');if(!id)return;var l=document.getElementById('loadingScreen');var a=document.getElementById('app');var nf=document.getElementById('notFound');l.style.display='flex';a.style.display='none';var to=setTimeout(function(){document.getElementById('loadMsg').innerText='Not found';nf.style.display='block';setTimeout(function(){l.style.display='none';a.style.display='block';},2000);},3000);var html=null;try{if(id.length>10){var r=await Promise.race([fetch(JSONBLOB_API+"/"+id),new Promise(function(_,rej){setTimeout(rej,1800)})]);if(r&&r.ok){var d=await r.json();if(d&&d.html)html=d.html;}}}catch(e){}if(!html){try{var c=await Promise.race([puter.kv.get('omugo_'+id),new Promise(function(_,rej){setTimeout(rej,1500)})]);if(c)html=c;}catch(e){}}if(html&&html.length>500){clearTimeout(to);document.open();document.write(extractHTML(html));document.close();}}checkLive();
 function switchTab(t){currentTab=t;['prompt','url','image'].forEach(function(k){document.getElementById('panel'+k.charAt(0).toUpperCase()+k.slice(1)).style.display=k===t?'block':'none';var btn=document.getElementById('tab'+k.charAt(0).toUpperCase()+k.slice(1));if(k===t){btn.className='tab-active';btn.style.cssText='flex:1;padding:10px;border-radius:12px;border:1px solid #FFD84D;background:linear-gradient(135deg,#C9A227,#FFD84D);color:#111;font-size:12px;font-weight:900';}else{btn.className='';btn.style.cssText='flex:1;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#fff;font-size:12px;font-weight:700';}});}
-document.getElementById('imageFile').addEventListener('change',function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(ev){lastImageBase64=ev.target.result;document.getElementById('imgPrev').src=lastImageBase64;document.getElementById('imagePreview').style.display='block';document.getElementById('imgDesc').innerText='Loaded: '+f.name;};r.readAsDataURL(f);});
-function saveIntegrations(){integrations.mailchimpKey=document.getElementById('autoKey').value.trim();integrations.listId=document.getElementById('autoList').value.trim();integrations.webhook=document.getElementById('webhookUrl').value.trim();localStorage.setItem('omugo_integrations',JSON.stringify(integrations));document.getElementById('intStatus').style.display='block';setTimeout(()=>document.getElementById('intStatus').style.display='none',3000);}
-function injectIntegrationsCode(html){var webhookCode=integrations.webhook?`<script>(function(){function sendWebhook(data){fetch('${integrations.webhook}',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(()=>{});}document.addEventListener('submit',function(e){var form=e.target;if(form.tagName==='FORM'){var fd=new FormData(form);var data={};fd.forEach((v,k)=>data[k]=v);data._site=location.href;data._time=new Date().toISOString();sendWebhook(data);}},true);})();<\/script>`:`<script>document.addEventListener('submit',function(e){if(e.target.tagName==='FORM'){e.preventDefault();alert('✅ Thank you!');e.target.reset();}},true);<\/script>`;var badge=`<!-- OMUGO AI 3.0 --><style>.omugo-badge{position:fixed;bottom:10px;right:10px;background:#FFD84D;color:#111;padding:4px 8px;border-radius:20px;font-size:9px;font-weight:900;z-index:9999}</style><div class="omugo-badge">⚡ OMUGO AI</div>`;if(html.toLowerCase().includes('</body>')){html=html.replace(/<\/body>/i,badge+webhookCode+'</body>');}else{html+=badge+webhookCode;}return html;}
+document.getElementById('imageFile')?.addEventListener('change',function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(ev){lastImageBase64=ev.target.result;document.getElementById('imgPrev').src=lastImageBase64;document.getElementById('imagePreview').style.display='block';document.getElementById('imgDesc').innerText='Loaded: '+f.name;};r.readAsDataURL(f);});
+function injectCode(html){var badge=`<!-- OMUGO AI 3.0 --><style>.omugo-badge{position:fixed;bottom:10px;right:10px;background:#FFD84D;color:#111;padding:4px 8px;border-radius:20px;font-size:9px;font-weight:900;z-index:9999}</style><div class="omugo-badge">⚡ OMUGO AI</div><script>document.addEventListener('submit',function(e){if(e.target.tagName==='FORM'){e.preventDefault();alert('✅ Thank you! Message sent!');e.target.reset();}},true);<\/script>`;if(html.toLowerCase().includes('</body>')){html=html.replace(/<\/body>/i,badge+'</body>');}else{html+=badge;}return html;}
 async function scrapeRealURL(url){try{var proxy='https://api.allorigins.win/raw?url='+encodeURIComponent(url);var res=await fetch(proxy);if(!res.ok)throw new Error('fail');var text=await res.text();var tmp=document.createElement('div');tmp.innerHTML=text;var visible=(tmp.innerText||tmp.textContent||'').replace(/\s+/g,' ').slice(0,8000);document.getElementById('urlScraped').style.display='block';document.getElementById('urlScrapedText').innerText='Scraped '+visible.length+' chars';return visible;}catch(e){document.getElementById('urlScraped').style.display='block';document.getElementById('urlScrapedText').innerText='Will recreate from URL';return 'URL: '+url;}}
-function toggleEdit(){var fr=document.getElementById('previewFrame');try{var doc=fr.contentDocument||fr.contentWindow.document;var is=doc.body.isContentEditable;doc.body.contentEditable=!is;doc.designMode=!is?'on':'off';document.getElementById('editBtn').innerHTML=is?'<i class="fas fa-pen"></i> Edit':'<i class="fas fa-check"></i> Editing';if(!is)alert('✅ Edit ON');}catch(e){alert('Build first!');}}
+function toggleEdit(){var fr=document.getElementById('previewFrame');try{var doc=fr.contentDocument||fr.contentWindow.document;var is=doc.body.isContentEditable;doc.body.contentEditable=!is;doc.designMode=!is?'on':'off';document.getElementById('editBtn').innerHTML=is?'<i class="fas fa-pen"></i> Edit':'<i class="fas fa-check"></i> Editing';}catch(e){alert('Build first!');}}
 async function buildWebsite(){
  var raw='';var mode=currentTab;
  if(mode==='prompt') raw=document.getElementById('promptInput').value.trim();
  else if(mode==='url'){var u=document.getElementById('urlInput').value.trim();if(!u){alert('Paste URL!');return;}var scraped=await scrapeRealURL(u);raw='Create premium website from URL '+u+' REAL CONTENT: '+scraped+' Build better premium glassmorphism rounded 24px Unsplash HD Tailwind';}
  else if(mode==='image'){var ip=document.getElementById('imagePrompt').value.trim();if(!lastImageBase64){alert('Upload image!');return;} raw=(ip||'Build website from image')+' Premium glass rounded 24px Unsplash HD';}
- if(!raw){alert('Describe!');return;}
+ if(!raw){alert('Please type your prompt!');return;}
+ var contact=document.getElementById('userContact').value.trim();
+ if(contact){localStorage.setItem('omugo_contact',contact); try{ let leads=await puter.kv.get('omugo_leads')||[]; leads.push({contact:contact,prompt:raw,time:new Date().toISOString()}); await puter.kv.set('omugo_leads',leads);}catch(e){} }
+
  var btn=document.getElementById('buildBtn');var st=document.getElementById('status');var stt=document.getElementById('statusText');
  btn.disabled=true;st.style.display='block';var html='';var tries=0;
  while(tries<4 && html.length<800){
-  tries++;stt.innerText='⏳ Try '+tries+'/4 building '+mode+'...';btn.innerHTML='<span class="loader"></span> Try '+tries+'...';
+  tries++;stt.innerText='⏳ Try '+tries+'/4 building...';btn.innerHTML='<span class="loader"></span> Try '+tries+'...';
   try{
    var rules="You are OMUGO AI 3.0 PREMIUM. USER: "+raw+". Build business. Include Tailwind CDN, FontAwesome, Poppins, AOS. Premium glass rounded-[24px] shadow-xl. Use Unsplash HD 5 images. Forms with name email phone message. Output ONLY raw HTML <!DOCTYPE to </html>.";
    var model=tries%2==0?'claude-3-5-sonnet':'gpt-4o-mini';var r;if(mode==='image' && lastImageBase64){ r=await puter.ai.chat(rules, lastImageBase64, {model:'gpt-4o'}); } else { r=await puter.ai.chat(rules,{model:model}); }
@@ -120,29 +129,37 @@ async function buildWebsite(){
   }catch(e){await new Promise(r=>setTimeout(r,2000));}
  }
  if(html.length>800){
-  var previewHtml=injectIntegrationsCode(html);document.getElementById('previewFrame').srcdoc=previewHtml;window.lastBuilt=html;window.lastBuiltWithIntegrations=previewHtml;window.lastPrompt=raw;stt.innerText='✅ Ready!';document.getElementById('integrationsPanel').style.display='block';setTimeout(()=>{st.style.display='none';},2000);
+  var previewHtml=injectCode(html);document.getElementById('previewFrame').srcdoc=previewHtml;window.lastBuilt=html;window.lastBuiltWithIntegrations=previewHtml;window.lastPrompt=raw;stt.innerText='✅ Ready!';setTimeout(()=>{st.style.display='none';},2000);
  }else{stt.innerText='⚠️ AI busy - try again';alert('AI busy - Wait 10s and click again!');st.style.display='none';}
  btn.disabled=false;btn.innerHTML='<i class="fas fa-wand-magic-sparkles"></i> Build My Website Now';
 }
 async function publishSite(){
  if(!window.lastBuilt){alert('Build first!');return;}
  var btn=document.querySelector('[onclick="publishSite()"]');var old=btn.innerHTML;btn.innerHTML='<span class="loader"></span> Publishing...';btn.disabled=true;
- var htmlToPublish=window.lastBuiltWithIntegrations||injectIntegrationsCode(window.lastBuilt);var blobId=null;
- try{var resp=await Promise.race([fetch(JSONBLOB_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({html:htmlToPublish,prompt:window.lastPrompt,integrations:integrations,date:new Date().toISOString()})}),new Promise(function(_,rej){setTimeout(rej,4000)})]);if(resp&&resp.ok){var loc=resp.headers.get('Location')||resp.headers.get('location');if(loc)blobId=loc.split('/').pop();else{var t=await resp.text();try{var j=JSON.parse(t);blobId=j.id;}catch(e){}}}}catch(e){}
+ var htmlToPublish=window.lastBuiltWithIntegrations||injectCode(window.lastBuilt);var blobId=null;
+ try{var resp=await Promise.race([fetch(JSONBLOB_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({html:htmlToPublish,prompt:window.lastPrompt,date:new Date().toISOString()})}),new Promise(function(_,rej){setTimeout(rej,4000)})]);if(resp&&resp.ok){var loc=resp.headers.get('Location')||resp.headers.get('location');if(loc)blobId=loc.split('/').pop();else{var t=await resp.text();try{var j=JSON.parse(t);blobId=j.id;}catch(e){}}}}catch(e){}
  try{if(!blobId){var id='site_'+Date.now();await Promise.race([puter.kv.set('omugo_'+id,htmlToPublish),new Promise(function(_,rej){setTimeout(rej,2500)})]);blobId=id;}}catch(e){if(!blobId)blobId='site_'+Date.now();}
  btn.innerHTML=old;btn.disabled=false;if(!blobId){alert('Cloud failed');return;}
  var link=location.origin+location.pathname+'?site='+blobId;
- var pop=document.createElement('div');pop.innerHTML='<div style="position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:99999;display:flex;align-items:center;justify-content:center;padding:20px"><div style="background:#fff;color:#111;border-radius:20px;padding:22px;max-width:400px;width:100%;text-align:center;font-family:Poppins"><div style="font-size:40px">🎉</div><h2 style="font-weight:900">LIVE!</h2><div style="background:#f5f5f5;border:1px solid #ddd;border-radius:12px;padding:10px;margin-top:12px;word-break:break-all;font-size:11px;font-weight:700">'+link+'</div><button id="copyBtn" style="width:100%;margin-top:10px;background:linear-gradient(90deg,#C9A227,#FFD84D);color:#111;border:none;padding:12px;border-radius:12px;font-weight:900">📋 Copy Link</button><a href="'+link+'" target="_blank" style="display:block;width:100%;margin-top:8px;background:#111;color:#fff;padding:12px;border-radius:12px;font-weight:800;text-decoration:none;text-align:center">🌍 Test Live</a><button id="closeBtn" style="margin-top:10px;background:none;border:none;color:#888">Close</button></div></div>';document.body.appendChild(pop);document.getElementById('copyBtn').onclick=function(){navigator.clipboard.writeText(link);this.innerText='✅ Copied!';};document.getElementById('closeBtn').onclick=function(){pop.remove();};
+ var pop=document.createElement('div');pop.innerHTML=`<div style="position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:99999;display:flex;align-items:center;justify-content:center;padding:20px"><div style="background:#fff;color:#111;border-radius:20px;padding:22px;max-width:400px;width:100%;text-align:center;font-family:Poppins"><div style="font-size:40px">🎉</div><h2 style="font-weight:900">LIVE!</h2><div style="background:#f5f5f5;border:1px solid #ddd;border-radius:12px;padding:10px;margin-top:12px;word-break:break-all;font-size:11px;font-weight:700">${link}</div><button id="copyBtn" style="width:100%;margin-top:10px;background:linear-gradient(90deg,#C9A227,#FFD84D);color:#111;border:none;padding:12px;border-radius:12px;font-weight:900">📋 Copy Link</button><a href="${link}" target="_blank" style="display:block;width:100%;margin-top:8px;background:#111;color:#fff;padding:12px;border-radius:12px;font-weight:800;text-decoration:none;text-align:center">🌍 Test Live</a><a href="https://wa.me/?text=I%20just%20built%20my%20website%20with%20OMUGO%20AI%20in%2030s!%20Try%20it:%20${encodeURIComponent(location.origin+location.pathname)}" target="_blank" style="display:block;width:100%;margin-top:8px;background:#25D366;color:#fff;padding:10px;border-radius:12px;font-weight:800;text-decoration:none;text-align:center">🚀 Share OMUGO & Go Viral</a><button id="closeBtn" style="margin-top:10px;background:none;border:none;color:#888">Close</button></div></div>`;document.body.appendChild(pop);document.getElementById('copyBtn').onclick=function(){navigator.clipboard.writeText(link);this.innerText='✅ Copied!';};document.getElementById('closeBtn').onclick=function(){pop.remove();};
 }
-function downloadHTML(){if(!window.lastBuilt){alert('Build first!');return;}var htmlToDownload=window.lastBuiltWithIntegrations||injectIntegrationsCode(window.lastBuilt);var blob=new Blob([htmlToDownload],{type:'text/html'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='omugo-website.html';a.click();URL.revokeObjectURL(url);}
+function downloadHTML(){if(!window.lastBuilt){alert('Build first!');return;}var blob=new Blob([window.lastBuiltWithIntegrations||injectCode(window.lastBuilt)],{type:'text/html'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='omugo-website.html';a.click();URL.revokeObjectURL(url);}
 </script>
+
+<script>
+// PWA Service Worker - makes app installable
+if('serviceWorker' in navigator){
+ navigator.serviceWorker.register(URL.createObjectURL(new Blob([`self.addEventListener('fetch', e=> e.respondWith(fetch(e.request).catch(()=>caches.match(e.request))));`],{type:'text/javascript'}))).catch(()=>{});
+}
+</script>
+
 <script>
 const translations={
- en:{badge:"BUILD UNLIMITED AI WEBSITES",hero:"WEBSITES WITH<br><span style='color:#FFD84D'>AI IN 30s!</span>",f1:"No Monthly Fees - $30/year Unlimited",f2:"Prompt + URL + Image → Website",f3:"Webhooks + Autoresponder + Analytics",cta:"GET STARTED NOW!"},
- fr:{badge:"CONSTRUISEZ ILLIMITÉ",hero:"SITES WEB AVEC<br><span style='color:#FFD84D'>IA EN 30s!</span>",f1:"Pas de frais mensuels - 30$/an Illimité",f2:"Prompt + URL + Image → Site Web",f3:"Webhooks + Autorépondeur",cta:"COMMENCER MAINTENANT!"},
- es:{badge:"CONSTRUYE ILIMITADOS",hero:"SITIOS WEB CON<br><span style='color:#FFD84D'>IA EN 30s!</span>",f1:"Sin mensualidad - $30/año Ilimitado",f2:"Prompt + URL + Imagen → Sitio",f3:"Webhooks + Autorespuesta",cta:"¡EMPIEZA AHORA!"},
- pt:{badge:"CRIE ILIMITADOS",hero:"SITES COM<br><span style='color:#FFD84D'>IA EM 30s!</span>",f1:"Sem mensalidade - $30/ano Ilimitado",f2:"Prompt + URL + Imagem → Site",f3:"Webhooks + Autoresposta",cta:"COMECE AGORA!"},
- de:{badge:"UNBEGRENZT BAUEN",hero:"WEBSITES MIT<br><span style='color:#FFD84D'>KI IN 30s!</span>",f1:"Keine Monatsgebühr - $30/Jahr Unbegrenzt",f2:"Prompt + URL + Bild → Website",f3:"Webhooks + Autoresponder",cta:"JETZT STARTEN!"}
+ en:{badge:"BUILD UNLIMITED AI WEBSITES",hero:"WEBSITES WITH<br><span style='color:#FFD84D'>AI IN 30s!</span>",f1:"No Monthly Fees - Free To Start",f2:"Prompt + URL + Image → Website",f3:"Installable App + Shareable Link",cta:"GET STARTED NOW!"},
+ fr:{badge:"CONSTRUISEZ ILLIMITÉ",hero:"SITES WEB AVEC<br><span style='color:#FFD84D'>IA EN 30s!</span>",f1:"Gratuit pour commencer",f2:"Prompt + URL + Image → Site",f3:"App Installable + Lien Partageable",cta:"COMMENCER!"},
+ es:{badge:"CONSTRUYE ILIMITADOS",hero:"SITIOS WEB CON<br><span style='color:#FFD84D'>IA EN 30s!</span>",f1:"Gratis para empezar",f2:"Prompt + URL + Imagen → Sitio",f3:"App Instalable",cta:"¡EMPIEZA AHORA!"},
+ pt:{badge:"CRIE ILIMITADOS",hero:"SITES COM<br><span style='color:#FFD84D'>IA EM 30s!</span>",f1:"Grátis para começar",f2:"Prompt + URL + Imagem → Site",f3:"App Instalável",cta:"COMECE AGORA!"},
+ de:{badge:"UNBEGRENZT BAUEN",hero:"WEBSITES MIT<br><span style='color:#FFD84D'>KI IN 30s!</span>",f1:"Kostenlos starten",f2:"Prompt + URL + Bild → Website",f3:"Installierbare App",cta:"JETZT STARTEN!"}
 };
 function setLang(l){localStorage.setItem('omugo_lang',l);var t=translations[l]||translations.en;document.querySelectorAll('[data-t]').forEach(function(el){var k=el.getAttribute('data-t');if(t[k])el.innerHTML=t[k];});document.getElementById('langSelect').value=l;}
 (function autoDetect(){var saved=localStorage.getItem('omugo_lang');if(saved){setLang(saved);return;}var b=(navigator.language||'en').toLowerCase();if(b.startsWith('fr'))setLang('fr');else if(b.startsWith('es'))setLang('es');else if(b.startsWith('pt'))setLang('pt');else if(b.startsWith('de'))setLang('de');else setLang('en');})();
