@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://omugo-ai.github.io/omugo-ai-builder/sitemap.xml
