@@ -5,14 +5,14 @@
 <title>OMUGO AI 3.0 - Build Unlimited AI Websites in 30s</title>
 <meta name="theme-color" content="#FFD84D">
 <script src="https://js.puter.com/v2/"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#0a0a12;color:#fff;overflow-x:hidden}
 .tab-active{background:linear-gradient(135deg,#C9A227,#FFD84D)!important;color:#111!important;font-weight:900!important}
 .big-input{width:100%;background:#1a1a26;border:1.5px solid rgba(255,255,255,.12);padding:15px;border-radius:14px;color:#fff;font-size:13px;outline:none}
-.big-input:focus{border-color:#FFD84D}.btn-gold{background:linear-gradient(135deg,#C9A227,#FFD84D);color:#111;padding:14px 22px;border-radius:30px;font-weight:900;border:none;cursor:pointer}
+.big-input:focus{border-color:#FFD84D}.btn-gold{background:linear-gradient(135deg,#C9A227,#FFD84D);color:#111;padding:14px 22px;border-radius:30px;font-weight:900;border:none;cursor:pointer;box-shadow:0 10px 30px rgba(201,162,39,.3)}
 .loader{border:3px solid #333;border-top:3px solid #C9A227;border-radius:50%;width:18px;height:18px;animation:spin 1s linear infinite;display:inline-block}@keyframes spin{to{transform:rotate(360deg)}}
 #loadingScreen{position:fixed;inset:0;background:#0a0a12;display:flex;align-items:center;justify-content:center;z-index:99999;flex-direction:column}
 .oa-logo{width:42px;height:42px;background:#2a1a0a;border:2px solid #C8962E;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px}
@@ -24,14 +24,32 @@
 <div id="app">
 <header style="display:flex;justify-content:space-between;align-items:center;padding:14px 5%;max-width:1200px;margin:0 auto">
 <div style="display:flex;align-items:center;gap:10px"><div class="oa-logo">👑</div><div><div style="font-weight:900">OMUGO <span style="background:#FFD84D;color:#111;padding:2px 6px;border-radius:6px;font-size:9px">AI 3.0</span></div><div style="font-size:9px;color:#C8962E;letter-spacing:2px;font-weight:700">AI BUILDER</div></div></div>
-<div style="display:flex;gap:8px"><select onchange="localStorage.setItem('omugo_lang',this.value)" style="background:#1a1a26;border:1px solid rgba(255,255,255,.15);color:#fff;padding:7px 12px;border-radius:20px;font-size:12px"><option value="en">🇺🇸 EN</option><option value="fr">🇫🇷 FR</option></select><a href="#builder" class="btn-gold" style="padding:9px 16px;font-size:12px">Start FREE</a></div>
+<div style="display:flex;gap:8px;align-items:center"><select onchange="localStorage.setItem('omugo_lang',this.value)" style="background:#1a1a26;border:1px solid rgba(255,255,255,.15);color:#fff;padding:7px 12px;border-radius:20px;font-size:12px"><option value="en">🇺🇸 EN</option><option value="fr">🇫🇷 FR</option></select><a href="#builder" class="btn-gold" style="padding:9px 16px;font-size:12px">Start FREE</a></div>
 </header>
+
 <section style="padding:20px 5% 30px;max-width:1200px;margin:0 auto">
 <div id="heroGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center">
-<div><div style="display:inline-block;background:#FFD84D;color:#111;padding:6px 14px;border-radius:20px;font-weight:900;font-size:11px">BUILD UNLIMITED AI WEBSITES</div><h1 style="font-size:42px;line-height:.95;font-weight:900;margin-top:14px">WEBSITES WITH<br><span style="color:#FFD84D">AI IN 30s!</span></h1><div style="margin-top:16px;display:flex;flex-direction:column;gap:8px"><p style="display:flex;gap:8px;align-items:center;font-size:13px;color:#ccc"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> No Monthly Fees</p><p style="display:flex;gap:8px;align-items:center;font-size:13px;color:#ccc"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> Prompt + URL + Image → Website</p><p style="display:flex;gap:8px;align-items:center;font-size:13px;color:#ccc"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> Mobile-First Like Zara</p></div><a href="#builder" class="btn-gold" style="display:inline-flex;margin-top:20px;gap:8px"><i class="fas fa-rocket"></i> GET STARTED NOW!</a></div>
-<div style="background:#151525;border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:12px"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=360&fit=crop" style="width:100%;border-radius:14px;height:220px;object-fit:cover"><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px"><div style="background:#1e1e32;border-radius:12px;padding:12px;text-align:center"><div style="font-size:11px;color:#FFD84D">💎 Premium</div><div style="font-size:11px;font-weight:700;color:#FFD84D">HD Ready</div></div><div style="background:#1e1e32;border-radius:12px;padding:12px;text-align:center"><div style="font-size:11px;color:#4ade80">📱 Mobile</div><div style="font-size:11px;font-weight:700;color:#4ade80">100% Perfect</div></div></div><div style="margin-top:12px;background:#FFD84D;color:#111;padding:9px;border-radius:20px;font-weight:900;font-size:11px;text-align:center"><i class="fas fa-magic"></i> AI Builds 30s - Like ChatGPT</div></div>
+<div>
+<div style="display:inline-block;background:#FFD84D;color:#111;padding:6px 14px;border-radius:20px;font-weight:900;font-size:11px">BUILD UNLIMITED AI WEBSITES</div>
+<h1 style="font-size:42px;line-height:.95;font-weight:900;margin-top:14px">WEBSITES WITH<br><span style="color:#FFD84D">AI IN 30s!</span></h1>
+<div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+<p style="display:flex;gap:8px;align-items:center;font-size:13px;color:#ccc"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> No Monthly Fees - Free To Start</p>
+<p style="display:flex;gap:8px;align-items:center;font-size:13px;color:#ccc"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> Prompt + URL + Image → Website</p>
+<p style="display:flex;gap:8px;align-items:center;font-size:13px;color:#ccc"><span style="background:#22c55e;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px">✓</span> Mobile-First Premium Beauty</p>
+</div>
+<a href="#builder" class="btn-gold" style="display:inline-flex;margin-top:20px;gap:8px"><i class="fas fa-rocket"></i> GET STARTED NOW!</a>
+</div>
+<div style="background:#151525;border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.5)">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=360&fit=crop" style="width:100%;border-radius:14px;height:220px;object-fit:cover">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+<div style="background:#1e1e32;border-radius:12px;padding:12px;text-align:center;border:1px solid rgba(255,255,255,.06)"><div style="font-size:11px;color:#FFD84D">💎 Premium</div><div style="font-size:11px;font-weight:700;color:#FFD84D">HD Ready</div></div>
+<div style="background:#1e1e32;border-radius:12px;padding:12px;text-align:center;border:1px solid rgba(255,255,255,.06)"><div style="font-size:11px;color:#4ade80">📱 Mobile</div><div style="font-size:11px;font-weight:700;color:#4ade80">100% Perfect</div></div>
+</div>
+<div style="margin-top:12px;background:#FFD84D;color:#111;padding:9px 14px;border-radius:20px;font-weight:900;font-size:11px;text-align:center"><i class="fas fa-magic"></i> AI Builds in 30s</div>
+</div>
 </div>
 </section>
+
 <div id="builder" style="padding:0 5% 30px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:20px;max-width:1200px;margin:0 auto">
 <div style="background:#111119;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:16px">
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px">
@@ -39,11 +57,14 @@
 <button id="tabUrl" onclick="switchTab('url')" style="padding:11px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:#1a1a26;color:#fff;font-size:12px;font-weight:700"><i class="fas fa-link"></i> URL</button>
 <button id="tabImage" onclick="switchTab('image')" style="padding:11px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:#1a1a26;color:#fff;font-size:12px;font-weight:700"><i class="fas fa-image"></i> Image</button>
 </div>
-<div style="background:rgba(255,216,77,.06);border:1.5px dashed rgba(255,216,77,.5);border-radius:14px;padding:12px;margin-bottom:14px"><p style="font-size:11px;font-weight:800;color:#FFD84D"><i class="fas fa-envelope"></i> Save your sites? (Optional)</p><input id="userContact" class="big-input" style="margin-top:8px;background:#0f0f1a" placeholder="Email or WhatsApp"></div>
-<div id="panelPrompt"><p style="font-size:11px;color:#888;margin-bottom:6px;font-weight:700">✨ Describe ANY website</p><textarea id="promptInput" class="big-input" style="min-height:150px;background:#0f0f1a" placeholder="Type anything - Example: Build a modern restaurant, fashion store, barbershop, church, farm - AI will build it beautifully like Zara - no more ugly outcome"></textarea></div>
-<div id="panelUrl" style="display:none"><input id="urlInput" class="big-input" style="background:#0f0f1a" placeholder="Paste any URL - https://example.com"><div id="urlScraped" style="display:none;margin-top:8px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);padding:8px;border-radius:10px;font-size:11px"><span id="urlScrapedText"></span></div></div>
+<div style="background:rgba(255,216,77,.06);border:1.5px dashed rgba(255,216,77,.5);border-radius:14px;padding:12px;margin-bottom:14px">
+<p style="font-size:11px;font-weight:800;color:#FFD84D"><i class="fas fa-envelope"></i> Save your sites? (Optional)</p>
+<input id="userContact" class="big-input" style="margin-top:8px;background:#0f0f1a" placeholder="Email or WhatsApp">
+</div>
+<div id="panelPrompt"><p style="font-size:11px;color:#888;margin-bottom:6px;font-weight:700">✨ Describe ANY website</p><textarea id="promptInput" class="big-input" style="min-height:150px;background:#0f0f1a" placeholder="Example: Build a modern fashion store homepage with black gold pink elegant design, hero, categories, products with WhatsApp order, Why Choose Us, contact - Opposite Maryland Street Ado"></textarea></div>
+<div id="panelUrl" style="display:none"><input id="urlInput" class="big-input" style="background:#0f0f1a" placeholder="Paste URL - https://example.com"><div id="urlScraped" style="display:none;margin-top:8px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);padding:8px;border-radius:10px;font-size:11px"><span id="urlScrapedText"></span></div></div>
 <div id="panelImage" style="display:none"><input type="file" id="imageFile" accept="image/*" class="big-input" style="background:#0f0f1a"><div id="imagePreview" style="margin-top:8px;display:none"><img id="imgPrev" style="width:100%;border-radius:12px;max-height:180px;object-fit:cover"></div><input id="imagePrompt" class="big-input" style="margin-top:8px;background:#0f0f1a" placeholder="What website from this image?"></div>
-<div id="status" style="display:none;margin-top:12px;background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.3);padding:10px;border-radius:12px;font-size:12px"><span class="loader"></span> <span id="statusText" style="color:#FFD84D">Building premium...</span></div>
+<div id="status" style="display:none;margin-top:12px;background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.3);padding:10px;border-radius:12px;font-size:12px"><span class="loader"></span> <span id="statusText" style="color:#FFD84D">Crafting your premium website...</span></div>
 <button id="buildBtn" onclick="buildWebsite()" class="btn-gold" style="width:100%;margin-top:14px"><i class="fas fa-wand-magic-sparkles"></i> Build My Website Now</button>
 </div>
 <div style="background:#111119;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:14px">
@@ -65,7 +86,7 @@ function extractHTML(t){if(!t)return"";var x=t.replace(/```html/g,'').replace(/`
 async function checkLive(){var p=new URLSearchParams(location.search);var id=p.get('site');if(!id)return;var l=document.getElementById('loadingScreen');var a=document.getElementById('app');l.style.display='flex';a.style.display='none';var html=null;try{if(id.length>10){var r=await fetch(JSONBLOB_API+"/"+id);if(r&&r.ok){var d=await r.json();if(d&&d.html)html=d.html;}}}catch(e){}if(!html){try{var c=await puter.kv.get('omugo_'+id);if(c)html=c;}catch(e){}}if(html&&html.length>500){document.open();document.write(extractHTML(html));document.close();}}checkLive();
 function switchTab(t){currentTab=t;['prompt','url','image'].forEach(function(k){document.getElementById('panel'+k.charAt(0).toUpperCase()+k.slice(1)).style.display=k===t?'block':'none';var btn=document.getElementById('tab'+k.charAt(0).toUpperCase()+k.slice(1));if(k===t){btn.className='tab-active';btn.style.cssText='padding:11px;border-radius:14px;border:1px solid #FFD84D;background:linear-gradient(135deg,#C9A227,#FFD84D);color:#111;font-size:12px;font-weight:900';}else{btn.className='';btn.style.cssText='padding:11px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:#1a1a26;color:#fff;font-size:12px;font-weight:700';}});}
 document.getElementById('imageFile')?.addEventListener('change',function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(ev){lastImageBase64=ev.target.result;document.getElementById('imgPrev').src=lastImageBase64;document.getElementById('imagePreview').style.display='block';};r.readAsDataURL(f);});
-function injectCode(html){var y=new Date().getFullYear();var badge=`<style>.omugo-badge{position:fixed;bottom:12px;right:12px;background:#2a1a0a;border:2px solid #C8962E;color:#FFD84D;padding:7px 12px;border-radius:20px;font-size:10px;font-weight:900;z-index:9999}img{max-width:100%;height:auto}</style><div class="omugo-badge">👑 OMUGO AI</div><footer style="background:#000;color:#aaa;padding:24px;text-align:center"><p style="color:#fff;font-weight:800">© ${y} - Built with OMUGO AI</p></footer><script>document.addEventListener('submit',function(e){if(e.target.tagName==='FORM'){e.preventDefault();alert('✅ Sent!');e.target.reset();}},true);<\/script>`;if(html.toLowerCase().includes('</body>')){html=html.replace(/<\/body>/i,badge+'</body>');}else{html+=badge;}return html;}
+function injectCode(html){var y=new Date().getFullYear();var badge=`<style>.omugo-badge{position:fixed;bottom:12px;right:12px;background:#2a1a0a;border:2px solid #C8962E;color:#FFD84D;padding:7px 12px;border-radius:20px;font-size:10px;font-weight:900;z-index:9999;box-shadow:0 4px 15px rgba(0,0,0,.3)}img{max-width:100%;height:auto;display:block}</style><div class="omugo-badge">👑 OMUGO AI</div><footer style="background:#000;color:#aaa;padding:24px;text-align:center"><p style="color:#fff;font-weight:800">© ${y} - All rights reserved. Built with OMUGO AI</p></footer><script>document.addEventListener('submit',function(e){if(e.target.tagName==='FORM'){e.preventDefault();alert('✅ Sent!');e.target.reset();}},true);<\/script>`;if(html.toLowerCase().includes('</body>')){html=html.replace(/<\/body>/i,badge+'</body>');}else{html+=badge;}return html;}
 async function scrapeRealURL(url){try{var proxy='https://api.allorigins.win/raw?url='+encodeURIComponent(url);var res=await fetch(proxy);if(!res.ok)throw 0;var text=await res.text();var tmp=document.createElement('div');tmp.innerHTML=text;var visible=(tmp.innerText||'').replace(/\s+/g,' ').slice(0,8000);document.getElementById('urlScraped').style.display='block';document.getElementById('urlScrapedText').innerText='Scraped '+visible.length+' chars';return visible;}catch(e){document.getElementById('urlScraped').style.display='block';document.getElementById('urlScrapedText').innerText='Will recreate from URL';return 'URL: '+url;}}
 function toggleEdit(){var fr=document.getElementById('previewFrame');try{var doc=fr.contentDocument||fr.contentWindow.document;var is=doc.body.isContentEditable;doc.body.contentEditable=!is;doc.designMode=!is?'on':'off';document.getElementById('editBtn').innerHTML=is?'✏️ Edit':'✅ Editing';}catch(e){alert('Build first!');}}
 function sendToOmugoWhatsApp(){var n="2347035399931";var p=document.getElementById('promptInput').value||"My Website";var c=document.getElementById('userContact').value||"";window.open("https://wa.me/"+n+"?text="+encodeURIComponent("Hello OMUGO AI: "+p.substring(0,100)+" Contact: "+c),"_blank");}
@@ -74,56 +95,48 @@ async function buildWebsite(){
  var raw='';var mode=currentTab;
  if(mode==='prompt')raw=document.getElementById('promptInput').value.trim();
  else if(mode==='url'){var u=document.getElementById('urlInput').value.trim();if(!u){alert('Paste URL!');return;}var s=await scrapeRealURL(u);raw='Create website from URL '+u+' CONTENT: '+s;}
- else if(mode==='image'){var ip=document.getElementById('imagePrompt').value.trim();if(!lastImageBase64){alert('Upload image!');return;}raw=(ip||'Build website from image')+' premium';}
+ else if(mode==='image'){var ip=document.getElementById('imagePrompt').value.trim();if(!lastImageBase64){alert('Upload image!');return;}raw=(ip||'Build website from image')+' premium luxury';}
  if(!raw){alert('Type prompt!');return;}
  var btn=document.getElementById('buildBtn');var st=document.getElementById('status');var stt=document.getElementById('statusText');
  btn.disabled=true;st.style.display='block';var html='';var tries=0;
  while(tries<4&&html.length<800){
-  tries++;stt.innerText='Try '+tries+'/4 - Building like ChatGPT...';btn.innerHTML='<span class="loader"></span> Building...';
+  tries++;stt.innerText='Try '+tries+'/4 - Crafting your premium website...';btn.innerHTML='<span class="loader"></span> Try '+tries+'...';
   try{
    var y=new Date().getFullYear();
    var rules = `
-You are OMUGO AI 3.0 - WORLD'S BEST PREMIUM BUILDER like Zara / Apple / ChatGPT builder.
+You are OMUGO AI 3.0 - Premium builder like Zara.
 
-USER WANTS: ${raw}
+USER REQUEST: ${raw}
 
-=== MANDATORY UNIVERSAL RULES - IF YOU BREAK, YOU FAIL ===
+=== CRITICAL RULES - MUST OBEY ===
 
-1. IMAGES - CRITICAL: NEVER use word as src. ALWAYS use REAL HD Unsplash URL:
-   Format: https://images.unsplash.com/600x400/?keyword1,keyword2
-   - Extract keywords from USER WANTS automatically.
-   - Example fashion store -> https://images.unsplash.com/600x400/?african,fashion,gown
-   - restaurant -> https://images.unsplash.com/600x400/?restaurant,food
-   - barbershop -> https://images.unsplash.com/600x400/?barbershop,haircut
-   - church -> https://images.unsplash.com/600x400/?church,worship
-   - If no keyword, use https://images.unsplash.com/600x400/?business,modern,professional
-   EVERY img must have real URL.
+1. IMAGES MUST SHOW - NEVER use word as src. ALWAYS use REAL valid Unsplash ID that exists:
+   fashion gown african woman -> https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&h=400&fit=crop
+   native wear ankara -> https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=600&h=400&fit=crop
+   corporate wear -> https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=400&fit=crop
+   restaurant food -> https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop
+   church -> https://images.unsplash.com/photo-1504052434569-70adb2eb6c07?w=600&h=400&fit=crop
+   barbershop -> https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop
+   farm -> https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=400&fit=crop
+   If unsure, use picsum: https://picsum.photos/seed/q1/600/400 etc with different seed for each image.
+   EVERY <img> MUST have https URL starting with https://images.unsplash.com/ or https://picsum.photos/ - no exceptions.
 
-2. DESIGN SYSTEM = PREMIUM LIKE ZARA:
-   - Colors: Extract from prompt OR default Black #111, Gold #C9A227, White, Accent Pink #e91e8c
-   - Fonts: Poppins for body, Playfair Display for headings (add Google Fonts)
-   - Tailwind CDN, FontAwesome 6.5
-   - Spacing: py-16 px-[5%] max-w-7xl mx-auto rounded-[20px] shadow-lg
-   - No Welcome huge overlapping text. No yellow pill buttons that cut. Buttons = flex-wrap gap-3, padding 12px 24px, border-radius 30px
-   - Mobile-first: grid-cols-1 md:grid-cols-2 lg:grid-cols-3/4
+2. LAYOUT PREMIUM ORGANIZED:
+   - No Welcome huge overlapping. No yellow pill cutting.
+   - Header sticky backdrop-blur white 95%, black logo
+   - Hero: grid 2 cols, left 48px Playfair bold, tagline, buttons flex-wrap gap-3, right image 520px object-cover
+   - Sections: py-16 px-[5%] max-w-7xl mx-auto
+   - Cards: rounded-[20px] border border-gray-100 shadow-lg overflow-hidden
+   - Buttons: black bg #111 text white or white border, padding 12px 24px rounded-full font-bold, WhatsApp green #25D366 separate
+   - Grid: grid-cols-1 md:grid-cols-2 lg:grid-cols-3/4 gap-6
 
-3. STRUCTURE AUTO:
-   - Header sticky, backdrop-blur, business name from prompt, navigation
-   - Hero 2 columns: left text (business name big Playfair 48px, tagline, CTA), right image HD
-   - Features / Categories grid with real images
-   - Products / Services cards with image 280px height, name, price, button
-   - Why Choose Us with icons in grid 5 columns
-   - About, Testimonials, Gallery Lookbook, FAQ, Contact with form + map placeholder + social icons, Footer © ${y}
-   - Floating WhatsApp button green fixed bottom-right
+3. EXTRACT FROM PROMPT: business name, phone, location, colors. Use black #111, gold #C9A227, white, pink #e91e8c if feminine/fashion, green #25D366 for WhatsApp.
 
-4. FUNCTIONALITY:
-   - Cart count JS, WhatsApp links https://wa.me/number?text=...
-   - Forms preventDefault alert Sent
-   - All buttons working
+4. BUILD FULL: Header, Hero, Categories/Features with images, Products grid with image height 280px, Why Choose Us icons, About, Services, Testimonials, Gallery 3 cols, FAQ accordion, Contact with form + map, Footer © ${y}, floating WhatsApp button fixed bottom-right green 56px.
 
-5. OUTPUT: ONLY complete HTML from <!DOCTYPE html> to </html>. No explanation. No markdown.
+5. OUTPUT ONLY HTML <!DOCTYPE html> to </html> with Tailwind CDN, Google Fonts Poppins + Playfair Display, FontAwesome 6.5, working JS.
 
-Current year ${y}. Make it elegant, feminine if fashion, luxurious, clean, professional, mobile-friendly like Zara.
+Year ${y}. Make it Zara elegant, clean, mobile perfect.
 `;
    var model=tries%2==0?'claude-3-5-sonnet':'gpt-4o-mini';
    var r;
@@ -132,12 +145,9 @@ Current year ${y}. Make it elegant, feminine if fashion, luxurious, clean, profe
    var content=r.message?r.message.content:r.toString();html=extractHTML(content);
   }catch(e){await new Promise(r=>setTimeout(r,2000));}
  }
- if(html.length>800){var ph=injectCode(html);document.getElementById('previewFrame').srcdoc=ph;window.lastBuilt=html;window.lastBuiltWithIntegrations=ph;window.lastPrompt=raw;stt.innerText='✅ Beautiful! Like ChatGPT!';setTimeout(()=>{st.style.display='none';},1500);}else{stt.innerText='⚠️ AI busy - try again';alert('AI busy - try again sir');st.style.display='none';}
+ if(html.length>800){var ph=injectCode(html);document.getElementById('previewFrame').srcdoc=ph;window.lastBuilt=html;window.lastBuiltWithIntegrations=ph;window.lastPrompt=raw;stt.innerText='✅ Ready! Beautiful & organized!';setTimeout(()=>{st.style.display='none';},1500);}else{stt.innerText='⚠️ AI busy - tap Build again';alert('AI busy - please tap Build again sir');st.style.display='none';}
  btn.disabled=false;btn.innerHTML='<i class="fas fa-wand-magic-sparkles"></i> Build My Website Now';
 }
 
 async function publishSite(){if(!window.lastBuilt){alert('Build first!');return;}var btn=document.querySelector('[onclick="publishSite()"]');var old=btn.innerHTML;btn.innerHTML='<span class="loader"></span> Publishing...';btn.disabled=true;var htmlToPublish=window.lastBuiltWithIntegrations||injectCode(window.lastBuilt);var blobId=null;try{var resp=await fetch(JSONBLOB_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({html:htmlToPublish,prompt:window.lastPrompt,date:new Date().toISOString()})});if(resp.ok){var loc=resp.headers.get('Location');if(loc)blobId=loc.split('/').pop();else{var t=await resp.text();try{blobId=JSON.parse(t).id;}catch(e){}}}}catch(e){}try{if(!blobId){var id='site_'+Date.now();await puter.kv.set('omugo_'+id,htmlToPublish);blobId=id;}}catch(e){}btn.innerHTML=old;btn.disabled=false;if(!blobId){alert('Cloud failed');return;}var link=location.origin+location.pathname+'?site='+blobId;var pop=document.createElement('div');pop.innerHTML=`<div style="position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:99999;display:flex;align-items:center;justify-content:center;padding:20px"><div style="background:#fff;color:#111;border-radius:20px;padding:22px;max-width:400px;width:100%;text-align:center"><div style="font-size:40px">🎉</div><h2 style="font-weight:900">LIVE!</h2><div style="background:#f5f5f5;border:1px solid #ddd;border-radius:12px;padding:10px;margin-top:12px;word-break:break-all;font-size:11px;font-weight:700">${link}</div><button id="copyBtn" style="width:100%;margin-top:10px;background:linear-gradient(90deg,#C9A227,#FFD84D);color:#111;border:none;padding:12px;border-radius:12px;font-weight:900">📋 Copy Link</button><a href="${link}" target="_blank" style="display:block;width:100%;margin-top:8px;background:#111;color:#fff;padding:12px;border-radius:12px;font-weight:800;text-decoration:none;text-align:center">🌍 Test Live</a><button id="closeBtn" style="margin-top:10px;background:none;border:none;color:#888">Close</button></div></div>`;document.body.appendChild(pop);document.getElementById('copyBtn').onclick=function(){navigator.clipboard.writeText(link);this.innerText='✅ Copied!';};document.getElementById('closeBtn').onclick=function(){pop.remove();};}
-function downloadHTML(){if(!window.lastBuilt){alert('Build first!');return;}var blob=new Blob([window.lastBuiltWithIntegrations||injectCode(window.lastBuilt)],{type:'text/html'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='omugo-website.html';a.click();URL.revokeObjectURL(url);}
-</script>
-</body>
-</html>
+function downloadHTML(){if(!window.lastBuilt){alert('Build first!');return;}var blob=new Blob([window.lastBuiltWithIntegrations||injectCode(window.lastBuilt)],{type:'text/html'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download
