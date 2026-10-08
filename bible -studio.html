@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Omugo Bible Studio - By Owner</title>
+<style>
+body{background:#0a0a0a;color:white;font-family:Arial;padding:20px}
+.card{background:#1a1a1a;padding:20px;border-radius:15px;max-width:600px;margin:auto}
+input,textarea,select{width:100%;padding:12px;margin:8px 0;border-radius:8px;background:#2a2a2a;color:white;border:none}
+button{background:#ffcc00;color:black;padding:15px;width:100%;border:none;border-radius:10px;font-weight:bold;font-size:18px;cursor:pointer}
+#preview img{width:100%;border-radius:10px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>🎬 Omugo Bible Studio</h2>
+<p>Create faceless Bible reels like Paul video - auto</p>
+
+<label>Select Story:</label>
+<select id="book">
+<option>Jonah 1 - The Runner</option>
+<option>Jonah 2 - The Storm</option>
+<option>Jonah 3 - The Fish</option>
+<option>Paul - From Saul to Paul</option>
+<option>David vs Goliath</option>
+</select>
+
+<textarea id="script" rows="6">Today, a journey. But before Jonah was a prophet, he was a runner. God said, Arise, go to Nineveh. But Jonah ran to Tarshish. He was not running from a city. He was running from God.</textarea>
+
+<label>Image Style:</label>
+<input id="prompt" value="Hebrew prophet on ship in storm, cinematic biblical, dramatic light, 9:16 vertical">
+
+<button onclick="generate()">GENERATE REEL - FREE</button>
+
+<div id="preview"></div>
+<audio id="audio" controls style="width:100%;margin-top:10px"></audio>
+<button onclick="downloadVideo()" style="background:#00ff88;margin-top:10px">DOWNLOAD VIDEO READY TO POST</button>
+</div>
+
+<script>
+async function generate(){
+  const text = document.getElementById('script').value;
+  const imgPrompt = document.getElementById('prompt').value;
+  
+  // 1. Free TTS - browser
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.rate=0.9; utterance.pitch=1;
+  speechSynthesis.speak(utterance);
+  
+  // 2. Free AI Image - Pollinations (no key, no limit)
+  const imgUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(imgPrompt)}?width=720&height=1280&nologo=true`;
+  document.getElementById('preview').innerHTML = `<img src="${imgUrl}" id="genImg"><p>Image generated free - no Leonardo credit used!</p>`;
+  
+  // Save for video step
+  window.generatedImg = imgUrl;
+  window.generatedText = text;
+}
+
+async function downloadVideo(){
+  alert("Step 2: Your image + voice is ready. For now download image and use CapCut to add voice (30 sec). Full FFmpeg auto-video joining code I will add in next update when you push this file to GitHub. Push this file first and send me repo link.");
+}
+</script>
+</body>
+</html>
